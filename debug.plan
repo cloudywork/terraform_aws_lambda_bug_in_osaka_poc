@@ -1,0 +1,772 @@
+2021/08/20 12:18:30 [WARN] Log levels other than TRACE are currently unreliable, and are supported only for backward compatibility.
+  Use TF_LOG=TRACE to see Terraform's internal logs.
+  ----
+2021/08/20 12:18:30 [INFO] Terraform version: 0.12.24  
+2021/08/20 12:18:30 [INFO] Go runtime version: go1.12.13
+2021/08/20 12:18:30 [INFO] CLI args: []string{"/usr/local/Cellar/tfenv/1.0.2/versions/0.12.24/terraform", "plan"}
+2021/08/20 12:18:30 [DEBUG] Attempting to open CLI config file: /Users/alejandro.rusell/.terraformrc
+2021/08/20 12:18:30 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2021/08/20 12:18:30 [INFO] CLI command args: []string{"plan"}
+2021/08/20 12:18:30 [WARN] Log levels other than TRACE are currently unreliable, and are supported only for backward compatibility.
+  Use TF_LOG=TRACE to see Terraform's internal logs.
+  ----
+2021/08/20 12:18:30 [DEBUG] New state was assigned lineage "a2dd8c45-e027-67af-6005-5eae7adc0314"
+2021/08/20 12:18:30 [DEBUG] checking for provider in "."
+2021/08/20 12:18:30 [DEBUG] checking for provider in "/usr/local/Cellar/tfenv/1.0.2/versions/0.12.24"
+2021/08/20 12:18:30 [DEBUG] checking for provider in ".terraform/plugins/darwin_amd64"
+2021/08/20 12:18:30 [DEBUG] found provider "terraform-provider-archive_v2.1.0_x5"
+2021/08/20 12:18:30 [DEBUG] found provider "terraform-provider-aws_v3.37.0_x5"
+2021/08/20 12:18:30 [DEBUG] found valid plugin: "archive", "2.1.0", "/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-archive_v2.1.0_x5"
+2021/08/20 12:18:30 [DEBUG] found valid plugin: "aws", "3.37.0", "/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-aws_v3.37.0_x5"
+2021/08/20 12:18:30 [DEBUG] checking for provisioner in "."
+2021/08/20 12:18:30 [DEBUG] checking for provisioner in "/usr/local/Cellar/tfenv/1.0.2/versions/0.12.24"
+2021/08/20 12:18:30 [DEBUG] checking for provisioner in ".terraform/plugins/darwin_amd64"
+2021/08/20 12:18:30 [INFO] backend/local: starting Plan operation
+2021-08-20T12:18:31.369+0200 [INFO]  plugin: configuring client automatic mTLS
+2021-08-20T12:18:31.392+0200 [DEBUG] plugin: starting plugin: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-archive_v2.1.0_x5 args=[/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-archive_v2.1.0_x5]
+2021-08-20T12:18:31.437+0200 [DEBUG] plugin: plugin started: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-archive_v2.1.0_x5 pid=65602
+2021-08-20T12:18:31.437+0200 [DEBUG] plugin: waiting for RPC address: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-archive_v2.1.0_x5
+2021-08-20T12:18:31.450+0200 [INFO]  plugin.terraform-provider-archive_v2.1.0_x5: configuring server automatic mTLS: timestamp=2021-08-20T12:18:31.450+0200
+2021-08-20T12:18:31.486+0200 [DEBUG] plugin: using plugin: version=5
+2021-08-20T12:18:31.486+0200 [DEBUG] plugin.terraform-provider-archive_v2.1.0_x5: plugin address: address=/var/folders/73/1k_q7ngn2_9gydd_rg3x1bsrwc69_w/T/plugin770217297 network=unix timestamp=2021-08-20T12:18:31.485+0200
+2021-08-20T12:18:31.536+0200 [DEBUG] plugin: plugin process exited: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-archive_v2.1.0_x5 pid=65602
+2021-08-20T12:18:31.536+0200 [DEBUG] plugin: plugin exited
+2021-08-20T12:18:31.536+0200 [INFO]  plugin: configuring client automatic mTLS
+2021-08-20T12:18:31.559+0200 [DEBUG] plugin: starting plugin: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-aws_v3.37.0_x5 args=[/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-aws_v3.37.0_x5]
+2021-08-20T12:18:32.073+0200 [DEBUG] plugin: plugin started: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-aws_v3.37.0_x5 pid=65603
+2021-08-20T12:18:32.073+0200 [DEBUG] plugin: waiting for RPC address: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-aws_v3.37.0_x5
+2021-08-20T12:18:32.143+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: configuring server automatic mTLS: timestamp=2021-08-20T12:18:32.143+0200
+2021-08-20T12:18:32.182+0200 [DEBUG] plugin: using plugin: version=5
+2021-08-20T12:18:32.182+0200 [DEBUG] plugin.terraform-provider-aws_v3.37.0_x5: plugin address: address=/var/folders/73/1k_q7ngn2_9gydd_rg3x1bsrwc69_w/T/plugin462738222 network=unix timestamp=2021-08-20T12:18:32.182+0200
+2021-08-20T12:18:32.309+0200 [DEBUG] plugin: plugin process exited: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-aws_v3.37.0_x5 pid=65603
+2021-08-20T12:18:32.309+0200 [DEBUG] plugin: plugin exited
+2021/08/20 12:18:32 [INFO] terraform: building graph: GraphTypeValidate
+2021/08/20 12:18:32 [DEBUG] adding implicit provider configuration provider.aws, implied first by aws_iam_role.iam_for_lambda
+2021/08/20 12:18:32 [DEBUG] adding implicit provider configuration provider.archive, implied first by data.archive_file.lambda_code_zip
+2021/08/20 12:18:32 [DEBUG] ProviderTransformer: "aws_iam_role.iam_for_lambda" (*terraform.NodeValidatableResource) needs provider.aws
+2021/08/20 12:18:32 [DEBUG] ProviderTransformer: "aws_lambda_function.hello_world" (*terraform.NodeValidatableResource) needs provider.aws.ap-northeast-3
+2021/08/20 12:18:32 [DEBUG] ProviderTransformer: "data.archive_file.lambda_code_zip" (*terraform.NodeValidatableResource) needs provider.archive
+2021/08/20 12:18:32 [DEBUG] ReferenceTransformer: "aws_lambda_function.hello_world" references: [data.archive_file.lambda_code_zip aws_iam_role.iam_for_lambda data.archive_file.lambda_code_zip data.archive_file.lambda_code_zip]
+2021/08/20 12:18:32 [DEBUG] ReferenceTransformer: "data.archive_file.lambda_code_zip" references: []
+2021/08/20 12:18:32 [DEBUG] ReferenceTransformer: "provider.aws.ap-northeast-3" references: []
+2021/08/20 12:18:32 [DEBUG] ReferenceTransformer: "provider.aws" references: []
+2021/08/20 12:18:32 [DEBUG] ReferenceTransformer: "provider.archive" references: []
+2021/08/20 12:18:32 [DEBUG] ReferenceTransformer: "aws_iam_role.iam_for_lambda" references: []
+2021/08/20 12:18:32 [DEBUG] Starting graph walk: walkValidate
+2021-08-20T12:18:32.311+0200 [INFO]  plugin: configuring client automatic mTLS
+2021-08-20T12:18:32.332+0200 [DEBUG] plugin: starting plugin: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-archive_v2.1.0_x5 args=[/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-archive_v2.1.0_x5]
+2021-08-20T12:18:32.336+0200 [DEBUG] plugin: plugin started: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-archive_v2.1.0_x5 pid=65604
+2021-08-20T12:18:32.336+0200 [DEBUG] plugin: waiting for RPC address: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-archive_v2.1.0_x5
+2021-08-20T12:18:32.349+0200 [INFO]  plugin.terraform-provider-archive_v2.1.0_x5: configuring server automatic mTLS: timestamp=2021-08-20T12:18:32.348+0200
+2021-08-20T12:18:32.382+0200 [DEBUG] plugin: using plugin: version=5
+2021-08-20T12:18:32.382+0200 [DEBUG] plugin.terraform-provider-archive_v2.1.0_x5: plugin address: address=/var/folders/73/1k_q7ngn2_9gydd_rg3x1bsrwc69_w/T/plugin306703083 network=unix timestamp=2021-08-20T12:18:32.382+0200
+2021-08-20T12:18:32.383+0200 [INFO]  plugin: configuring client automatic mTLS
+2021-08-20T12:18:32.408+0200 [DEBUG] plugin: starting plugin: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-aws_v3.37.0_x5 args=[/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-aws_v3.37.0_x5]
+2021-08-20T12:18:32.426+0200 [DEBUG] plugin: plugin started: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-aws_v3.37.0_x5 pid=65605
+2021-08-20T12:18:32.426+0200 [DEBUG] plugin: waiting for RPC address: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-aws_v3.37.0_x5
+2021-08-20T12:18:32.484+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: configuring server automatic mTLS: timestamp=2021-08-20T12:18:32.484+0200
+2021-08-20T12:18:32.520+0200 [DEBUG] plugin: using plugin: version=5
+2021-08-20T12:18:32.520+0200 [DEBUG] plugin.terraform-provider-aws_v3.37.0_x5: plugin address: address=/var/folders/73/1k_q7ngn2_9gydd_rg3x1bsrwc69_w/T/plugin915424112 network=unix timestamp=2021-08-20T12:18:32.520+0200
+2021-08-20T12:18:32.520+0200 [INFO]  plugin: configuring client automatic mTLS
+2021-08-20T12:18:32.547+0200 [DEBUG] plugin: starting plugin: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-aws_v3.37.0_x5 args=[/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-aws_v3.37.0_x5]
+2021-08-20T12:18:32.550+0200 [DEBUG] plugin: plugin started: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-aws_v3.37.0_x5 pid=65606
+2021-08-20T12:18:32.550+0200 [DEBUG] plugin: waiting for RPC address: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-aws_v3.37.0_x5
+2021-08-20T12:18:32.614+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: configuring server automatic mTLS: timestamp=2021-08-20T12:18:32.614+0200
+2021-08-20T12:18:32.650+0200 [DEBUG] plugin.terraform-provider-aws_v3.37.0_x5: plugin address: address=/var/folders/73/1k_q7ngn2_9gydd_rg3x1bsrwc69_w/T/plugin875566637 network=unix timestamp=2021-08-20T12:18:32.649+0200
+2021-08-20T12:18:32.650+0200 [DEBUG] plugin: using plugin: version=5
+2021-08-20T12:18:32.655+0200 [DEBUG] plugin: plugin process exited: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-archive_v2.1.0_x5 pid=65604
+2021-08-20T12:18:32.655+0200 [DEBUG] plugin: plugin exited
+2021-08-20T12:18:32.822+0200 [DEBUG] plugin: plugin process exited: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-aws_v3.37.0_x5 pid=65605
+2021-08-20T12:18:32.822+0200 [DEBUG] plugin: plugin exited
+2021-08-20T12:18:32.864+0200 [DEBUG] plugin: plugin process exited: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-aws_v3.37.0_x5 pid=65606
+2021-08-20T12:18:32.864+0200 [DEBUG] plugin: plugin exited
+2021/08/20 12:18:32 [INFO] backend/local: plan calling Refresh
+2021/08/20 12:18:32 [INFO] terraform: building graph: GraphTypeRefresh
+[0m[1mRefreshing Terraform state in-memory prior to plan...[0m
+The refreshed state will be used to calculate this plan, but will not be
+2021/08/20 12:18:32 [DEBUG] adding implicit provider configuration provider.archive, implied first by data.archive_file.lambda_code_zip
+2021/08/20 12:18:32 [DEBUG] adding implicit provider configuration provider.aws, implied first by aws_iam_role.iam_for_lambda
+persisted to local or remote state storage.
+[0m
+2021/08/20 12:18:32 [DEBUG] ProviderTransformer: "data.archive_file.lambda_code_zip" (*terraform.NodeRefreshableDataResource) needs provider.archive
+2021/08/20 12:18:32 [DEBUG] ProviderTransformer: "aws_iam_role.iam_for_lambda" (*terraform.NodeRefreshableManagedResource) needs provider.aws
+2021/08/20 12:18:32 [DEBUG] ProviderTransformer: "aws_lambda_function.hello_world" (*terraform.NodeRefreshableManagedResource) needs provider.aws.ap-northeast-3
+2021/08/20 12:18:32 [DEBUG] ReferenceTransformer: "aws_iam_role.iam_for_lambda" references: []
+2021/08/20 12:18:32 [DEBUG] ReferenceTransformer: "aws_lambda_function.hello_world" references: [data.archive_file.lambda_code_zip aws_iam_role.iam_for_lambda data.archive_file.lambda_code_zip data.archive_file.lambda_code_zip]
+2021/08/20 12:18:32 [DEBUG] ReferenceTransformer: "data.archive_file.lambda_code_zip" references: []
+2021/08/20 12:18:32 [DEBUG] ReferenceTransformer: "provider.aws.ap-northeast-3" references: []
+2021/08/20 12:18:32 [DEBUG] ReferenceTransformer: "provider.archive" references: []
+2021/08/20 12:18:32 [DEBUG] ReferenceTransformer: "provider.aws" references: []
+2021/08/20 12:18:32 [DEBUG] Starting graph walk: walkRefresh
+2021-08-20T12:18:32.866+0200 [INFO]  plugin: configuring client automatic mTLS
+2021-08-20T12:18:32.893+0200 [DEBUG] plugin: starting plugin: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-aws_v3.37.0_x5 args=[/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-aws_v3.37.0_x5]
+2021-08-20T12:18:32.909+0200 [DEBUG] plugin: plugin started: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-aws_v3.37.0_x5 pid=65607
+2021-08-20T12:18:32.909+0200 [DEBUG] plugin: waiting for RPC address: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-aws_v3.37.0_x5
+2021-08-20T12:18:32.970+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: configuring server automatic mTLS: timestamp=2021-08-20T12:18:32.970+0200
+2021-08-20T12:18:33.004+0200 [DEBUG] plugin: using plugin: version=5
+2021-08-20T12:18:33.004+0200 [DEBUG] plugin.terraform-provider-aws_v3.37.0_x5: plugin address: address=/var/folders/73/1k_q7ngn2_9gydd_rg3x1bsrwc69_w/T/plugin361280378 network=unix timestamp=2021-08-20T12:18:33.004+0200
+2021-08-20T12:18:33.005+0200 [INFO]  plugin: configuring client automatic mTLS
+2021-08-20T12:18:33.032+0200 [DEBUG] plugin: starting plugin: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-aws_v3.37.0_x5 args=[/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-aws_v3.37.0_x5]
+2021-08-20T12:18:33.037+0200 [DEBUG] plugin: plugin started: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-aws_v3.37.0_x5 pid=65608
+2021-08-20T12:18:33.038+0200 [DEBUG] plugin: waiting for RPC address: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-aws_v3.37.0_x5
+2021-08-20T12:18:33.099+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: configuring server automatic mTLS: timestamp=2021-08-20T12:18:33.099+0200
+2021-08-20T12:18:33.134+0200 [DEBUG] plugin: using plugin: version=5
+2021-08-20T12:18:33.134+0200 [DEBUG] plugin.terraform-provider-aws_v3.37.0_x5: plugin address: address=/var/folders/73/1k_q7ngn2_9gydd_rg3x1bsrwc69_w/T/plugin344117759 network=unix timestamp=2021-08-20T12:18:33.134+0200
+2021-08-20T12:18:33.135+0200 [INFO]  plugin: configuring client automatic mTLS
+2021-08-20T12:18:33.161+0200 [DEBUG] plugin: starting plugin: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-archive_v2.1.0_x5 args=[/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-archive_v2.1.0_x5]
+2021-08-20T12:18:33.167+0200 [DEBUG] plugin: plugin started: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-archive_v2.1.0_x5 pid=65609
+2021-08-20T12:18:33.167+0200 [DEBUG] plugin: waiting for RPC address: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-archive_v2.1.0_x5
+2021-08-20T12:18:33.179+0200 [INFO]  plugin.terraform-provider-archive_v2.1.0_x5: configuring server automatic mTLS: timestamp=2021-08-20T12:18:33.179+0200
+2021-08-20T12:18:33.213+0200 [DEBUG] plugin: using plugin: version=5
+2021-08-20T12:18:33.213+0200 [DEBUG] plugin.terraform-provider-archive_v2.1.0_x5: plugin address: network=unix address=/var/folders/73/1k_q7ngn2_9gydd_rg3x1bsrwc69_w/T/plugin216837708 timestamp=2021-08-20T12:18:33.213+0200
+2021/08/20 12:18:33 [DEBUG] ReferenceTransformer: "data.archive_file.lambda_code_zip" references: []
+[0m[1mdata.archive_file.lambda_code_zip: Refreshing state...[0m
+2021-08-20T12:18:33.276+0200 [DEBUG] plugin: plugin process exited: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-archive_v2.1.0_x5 pid=65609
+2021-08-20T12:18:33.276+0200 [DEBUG] plugin: plugin exited
+2021-08-20T12:18:33.304+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:33 [INFO] AWS Auth provider used: "EnvProvider": timestamp=2021-08-20T12:18:33.303+0200
+2021-08-20T12:18:33.304+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:33 [INFO] AWS Auth provider used: "EnvProvider": timestamp=2021-08-20T12:18:33.304+0200
+2021-08-20T12:18:33.304+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:33 [DEBUG] Trying to get account information via sts:GetCallerIdentity: timestamp=2021-08-20T12:18:33.304+0200
+2021-08-20T12:18:33.305+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:33 [DEBUG] Trying to get account information via sts:GetCallerIdentity: timestamp=2021-08-20T12:18:33.305+0200
+2021-08-20T12:18:33.305+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:33 [DEBUG] [aws-sdk-go] DEBUG: Request sts/GetCallerIdentity Details:
+---[ REQUEST POST-SIGN ]-----------------------------
+POST / HTTP/1.1
+Host: sts.amazonaws.com
+User-Agent: APN/1.0 HashiCorp/1.0 Terraform/0.12.24 (+https://www.terraform.io) terraform-provider-aws/dev (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go/1.38.19 (go1.16; darwin; amd64)
+Content-Length: 43
+Authorization: AWS4-HMAC-SHA256 Credential=ASIAU4LYCKVBYQHJCREI/20210820/us-east-1/sts/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date;x-amz-security-token, Signature=2ea237412730f7ac0cc0352d7a25c10786c9bbb09f8201030d162a4226603e4c
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+X-Amz-Date: 20210820T101833Z
+X-Amz-Security-Token: FwoGZXIvYXdzEKT//////////wEaDLUq4Co5txSDNc+BlSK0ARUj7VyO2dzPjvIvd2nII2023Ha+gOQLBHar3ogSSiH084ynAT7Zgxi7zzi0gyMDBnee0kQE5IlAwaYYb16xzJNUYDIe5h2F612uuFNu8RjCoiN0mnWjphOZcAEieE0hNwZaByERs7aFAOFk6WSkv1AknD+qrhMr8nH0jduMSbdOmF+U+Y3UMlznXDeZYjPQvkWr8ptqrlr3rcHRc12kxG5dVE+hc/ECEBSyEdylY87qVIH+6ij2/P2IBjIt3qeyct4JazANHcaG/EeuyJvkSQsA/171youIplXe8rzngubvzycQ0PqH4vZr
+Accept-Encoding: gzip
+
+Action=GetCallerIdentity&Version=2011-06-15
+-----------------------------------------------------: timestamp=2021-08-20T12:18:33.305+0200
+2021-08-20T12:18:33.305+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:33 [DEBUG] [aws-sdk-go] DEBUG: Request sts/GetCallerIdentity Details:
+---[ REQUEST POST-SIGN ]-----------------------------
+POST / HTTP/1.1
+Host: sts.ap-northeast-3.amazonaws.com
+User-Agent: APN/1.0 HashiCorp/1.0 Terraform/0.12.24 (+https://www.terraform.io) terraform-provider-aws/dev (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go/1.38.19 (go1.16; darwin; amd64)
+Content-Length: 43
+Authorization: AWS4-HMAC-SHA256 Credential=ASIAU4LYCKVBYQHJCREI/20210820/ap-northeast-3/sts/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date;x-amz-security-token, Signature=2f364e18f780ab2c52ea616ac0d729f45a7fe9413525bde1bf3116b548c4f3ba
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+X-Amz-Date: 20210820T101833Z
+X-Amz-Security-Token: FwoGZXIvYXdzEKT//////////wEaDLUq4Co5txSDNc+BlSK0ARUj7VyO2dzPjvIvd2nII2023Ha+gOQLBHar3ogSSiH084ynAT7Zgxi7zzi0gyMDBnee0kQE5IlAwaYYb16xzJNUYDIe5h2F612uuFNu8RjCoiN0mnWjphOZcAEieE0hNwZaByERs7aFAOFk6WSkv1AknD+qrhMr8nH0jduMSbdOmF+U+Y3UMlznXDeZYjPQvkWr8ptqrlr3rcHRc12kxG5dVE+hc/ECEBSyEdylY87qVIH+6ij2/P2IBjIt3qeyct4JazANHcaG/EeuyJvkSQsA/171youIplXe8rzngubvzycQ0PqH4vZr
+Accept-Encoding: gzip
+
+Action=GetCallerIdentity&Version=2011-06-15
+-----------------------------------------------------: timestamp=2021-08-20T12:18:33.305+0200
+2021-08-20T12:18:34.001+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:34 [DEBUG] [aws-sdk-go] DEBUG: Response sts/GetCallerIdentity Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 463
+Content-Type: text/xml
+Date: Fri, 20 Aug 2021 10:18:33 GMT
+X-Amzn-Requestid: 7801b4e7-63b6-43c6-9b9f-edbeec68d8ef
+
+
+-----------------------------------------------------: timestamp=2021-08-20T12:18:34.001+0200
+2021-08-20T12:18:34.001+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:34 [DEBUG] [aws-sdk-go] <GetCallerIdentityResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+  <GetCallerIdentityResult>
+    <Arn>arn:aws:sts::335796131139:assumed-role/AdministratorAccess-Role/alejandro.rusell</Arn>
+    <UserId>AROAU4LYCKVBSZEHQ4Y64:alejandro.rusell</UserId>
+    <Account>335796131139</Account>
+  </GetCallerIdentityResult>
+  <ResponseMetadata>
+    <RequestId>7801b4e7-63b6-43c6-9b9f-edbeec68d8ef</RequestId>
+  </ResponseMetadata>
+</GetCallerIdentityResponse>: timestamp=2021-08-20T12:18:34.001+0200
+2021-08-20T12:18:34.001+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:34 [DEBUG] Trying to get account information via sts:GetCallerIdentity: timestamp=2021-08-20T12:18:34.001+0200
+2021-08-20T12:18:34.001+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:34 [DEBUG] [aws-sdk-go] DEBUG: Request sts/GetCallerIdentity Details:
+---[ REQUEST POST-SIGN ]-----------------------------
+POST / HTTP/1.1
+Host: sts.amazonaws.com
+User-Agent: APN/1.0 HashiCorp/1.0 Terraform/0.12.24 (+https://www.terraform.io) terraform-provider-aws/dev (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go/1.38.19 (go1.16; darwin; amd64)
+Content-Length: 43
+Authorization: AWS4-HMAC-SHA256 Credential=ASIAU4LYCKVBYQHJCREI/20210820/us-east-1/sts/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date;x-amz-security-token, Signature=c37818703d0e3c821c96ca9665523ecd7b232122f439fa75f54afa1e99069d4b
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+X-Amz-Date: 20210820T101834Z
+X-Amz-Security-Token: FwoGZXIvYXdzEKT//////////wEaDLUq4Co5txSDNc+BlSK0ARUj7VyO2dzPjvIvd2nII2023Ha+gOQLBHar3ogSSiH084ynAT7Zgxi7zzi0gyMDBnee0kQE5IlAwaYYb16xzJNUYDIe5h2F612uuFNu8RjCoiN0mnWjphOZcAEieE0hNwZaByERs7aFAOFk6WSkv1AknD+qrhMr8nH0jduMSbdOmF+U+Y3UMlznXDeZYjPQvkWr8ptqrlr3rcHRc12kxG5dVE+hc/ECEBSyEdylY87qVIH+6ij2/P2IBjIt3qeyct4JazANHcaG/EeuyJvkSQsA/171youIplXe8rzngubvzycQ0PqH4vZr
+Accept-Encoding: gzip
+
+Action=GetCallerIdentity&Version=2011-06-15
+-----------------------------------------------------: timestamp=2021-08-20T12:18:34.001+0200
+2021-08-20T12:18:34.532+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:34 [DEBUG] [aws-sdk-go] DEBUG: Response sts/GetCallerIdentity Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 463
+Content-Type: text/xml
+Date: Fri, 20 Aug 2021 10:18:33 GMT
+X-Amzn-Requestid: 05212831-2990-4f2f-996b-f26e4f92ee77
+
+
+-----------------------------------------------------: timestamp=2021-08-20T12:18:34.532+0200
+2021-08-20T12:18:34.532+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:34 [DEBUG] [aws-sdk-go] <GetCallerIdentityResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+  <GetCallerIdentityResult>
+    <Arn>arn:aws:sts::335796131139:assumed-role/AdministratorAccess-Role/alejandro.rusell</Arn>
+    <UserId>AROAU4LYCKVBSZEHQ4Y64:alejandro.rusell</UserId>
+    <Account>335796131139</Account>
+  </GetCallerIdentityResult>
+  <ResponseMetadata>
+    <RequestId>05212831-2990-4f2f-996b-f26e4f92ee77</RequestId>
+  </ResponseMetadata>
+</GetCallerIdentityResponse>: timestamp=2021-08-20T12:18:34.532+0200
+2021-08-20T12:18:34.532+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:34 [DEBUG] Trying to get account information via sts:GetCallerIdentity: timestamp=2021-08-20T12:18:34.532+0200
+2021-08-20T12:18:34.533+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:34 [DEBUG] [aws-sdk-go] DEBUG: Request sts/GetCallerIdentity Details:
+---[ REQUEST POST-SIGN ]-----------------------------
+POST / HTTP/1.1
+Host: sts.ap-northeast-3.amazonaws.com
+User-Agent: APN/1.0 HashiCorp/1.0 Terraform/0.12.24 (+https://www.terraform.io) terraform-provider-aws/dev (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go/1.38.19 (go1.16; darwin; amd64)
+Content-Length: 43
+Authorization: AWS4-HMAC-SHA256 Credential=ASIAU4LYCKVBYQHJCREI/20210820/ap-northeast-3/sts/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date;x-amz-security-token, Signature=f2fc904673ff322ea18c3add35169a32ad1e5c810f0265d60d110bb43ef82727
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+X-Amz-Date: 20210820T101834Z
+X-Amz-Security-Token: FwoGZXIvYXdzEKT//////////wEaDLUq4Co5txSDNc+BlSK0ARUj7VyO2dzPjvIvd2nII2023Ha+gOQLBHar3ogSSiH084ynAT7Zgxi7zzi0gyMDBnee0kQE5IlAwaYYb16xzJNUYDIe5h2F612uuFNu8RjCoiN0mnWjphOZcAEieE0hNwZaByERs7aFAOFk6WSkv1AknD+qrhMr8nH0jduMSbdOmF+U+Y3UMlznXDeZYjPQvkWr8ptqrlr3rcHRc12kxG5dVE+hc/ECEBSyEdylY87qVIH+6ij2/P2IBjIt3qeyct4JazANHcaG/EeuyJvkSQsA/171youIplXe8rzngubvzycQ0PqH4vZr
+Accept-Encoding: gzip
+
+Action=GetCallerIdentity&Version=2011-06-15
+-----------------------------------------------------: timestamp=2021-08-20T12:18:34.533+0200
+2021-08-20T12:18:34.535+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:34 [DEBUG] [aws-sdk-go] DEBUG: Response sts/GetCallerIdentity Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 463
+Content-Type: text/xml
+Date: Fri, 20 Aug 2021 10:18:34 GMT
+X-Amzn-Requestid: 3be2ddb7-89ea-461b-8920-b1f95fa445aa
+
+
+-----------------------------------------------------: timestamp=2021-08-20T12:18:34.535+0200
+2021-08-20T12:18:34.535+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:34 [DEBUG] [aws-sdk-go] <GetCallerIdentityResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+  <GetCallerIdentityResult>
+    <Arn>arn:aws:sts::335796131139:assumed-role/AdministratorAccess-Role/alejandro.rusell</Arn>
+    <UserId>AROAU4LYCKVBSZEHQ4Y64:alejandro.rusell</UserId>
+    <Account>335796131139</Account>
+  </GetCallerIdentityResult>
+  <ResponseMetadata>
+    <RequestId>3be2ddb7-89ea-461b-8920-b1f95fa445aa</RequestId>
+  </ResponseMetadata>
+</GetCallerIdentityResponse>: timestamp=2021-08-20T12:18:34.535+0200
+2021-08-20T12:18:34.539+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:34 [DEBUG] [aws-sdk-go] DEBUG: Request ec2/DescribeAccountAttributes Details:
+---[ REQUEST POST-SIGN ]-----------------------------
+POST / HTTP/1.1
+Host: ec2.eu-west-1.amazonaws.com
+User-Agent: APN/1.0 HashiCorp/1.0 Terraform/0.12.24 (+https://www.terraform.io) terraform-provider-aws/dev (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go/1.38.19 (go1.16; darwin; amd64)
+Content-Length: 87
+Authorization: AWS4-HMAC-SHA256 Credential=ASIAU4LYCKVBYQHJCREI/20210820/eu-west-1/ec2/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date;x-amz-security-token, Signature=92510ac6e709cf36dc515806d9c347439a40cffb12571e427bf06924f81b901e
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+X-Amz-Date: 20210820T101834Z
+X-Amz-Security-Token: FwoGZXIvYXdzEKT//////////wEaDLUq4Co5txSDNc+BlSK0ARUj7VyO2dzPjvIvd2nII2023Ha+gOQLBHar3ogSSiH084ynAT7Zgxi7zzi0gyMDBnee0kQE5IlAwaYYb16xzJNUYDIe5h2F612uuFNu8RjCoiN0mnWjphOZcAEieE0hNwZaByERs7aFAOFk6WSkv1AknD+qrhMr8nH0jduMSbdOmF+U+Y3UMlznXDeZYjPQvkWr8ptqrlr3rcHRc12kxG5dVE+hc/ECEBSyEdylY87qVIH+6ij2/P2IBjIt3qeyct4JazANHcaG/EeuyJvkSQsA/171youIplXe8rzngubvzycQ0PqH4vZr
+Accept-Encoding: gzip
+
+Action=DescribeAccountAttributes&AttributeName.1=supported-platforms&Version=2016-11-15
+-----------------------------------------------------: timestamp=2021-08-20T12:18:34.539+0200
+2021-08-20T12:18:35.034+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:35 [DEBUG] [aws-sdk-go] DEBUG: Response ec2/DescribeAccountAttributes Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 540
+Cache-Control: no-cache, no-store
+Content-Type: text/xml;charset=UTF-8
+Date: Fri, 20 Aug 2021 10:18:34 GMT
+Server: AmazonEC2
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Amzn-Requestid: 74d78975-ea85-4449-9c8d-26ae17573f75
+
+
+-----------------------------------------------------: timestamp=2021-08-20T12:18:35.034+0200
+2021-08-20T12:18:35.034+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:35 [DEBUG] [aws-sdk-go] <?xml version="1.0" encoding="UTF-8"?>
+<DescribeAccountAttributesResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+    <requestId>74d78975-ea85-4449-9c8d-26ae17573f75</requestId>
+    <accountAttributeSet>
+        <item>
+            <attributeName>supported-platforms</attributeName>
+            <attributeValueSet>
+                <item>
+                    <attributeValue>VPC</attributeValue>
+                </item>
+            </attributeValueSet>
+        </item>
+    </accountAttributeSet>
+</DescribeAccountAttributesResponse>: timestamp=2021-08-20T12:18:35.034+0200
+2021/08/20 12:18:35 [DEBUG] Resource state not found for node "aws_iam_role.iam_for_lambda", instance aws_iam_role.iam_for_lambda
+2021/08/20 12:18:35 [DEBUG] ReferenceTransformer: "aws_iam_role.iam_for_lambda" references: []
+2021/08/20 12:18:35 [WARN] Provider "registry.terraform.io/-/aws" produced an invalid plan for aws_iam_role.iam_for_lambda, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .force_detach_policies: planned value cty.False does not match config value cty.NullVal(cty.Bool)
+      - .path: planned value cty.StringVal("/") does not match config value cty.NullVal(cty.String)
+      - .max_session_duration: planned value cty.NumberIntVal(3600) does not match config value cty.NullVal(cty.Number)
+      - .inline_policy: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+2021-08-20T12:18:35.046+0200 [DEBUG] plugin: plugin process exited: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-aws_v3.37.0_x5 pid=65607
+2021-08-20T12:18:35.046+0200 [DEBUG] plugin: plugin exited
+2021-08-20T12:18:35.718+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:35 [DEBUG] [aws-sdk-go] DEBUG: Response sts/GetCallerIdentity Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 463
+Content-Type: text/xml
+Date: Fri, 20 Aug 2021 10:18:34 GMT
+X-Amzn-Requestid: 3cd8788b-d257-43ce-9984-e2ab47a6eed5
+
+
+-----------------------------------------------------: timestamp=2021-08-20T12:18:35.718+0200
+2021-08-20T12:18:35.718+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:35 [DEBUG] [aws-sdk-go] <GetCallerIdentityResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+  <GetCallerIdentityResult>
+    <Arn>arn:aws:sts::335796131139:assumed-role/AdministratorAccess-Role/alejandro.rusell</Arn>
+    <UserId>AROAU4LYCKVBSZEHQ4Y64:alejandro.rusell</UserId>
+    <Account>335796131139</Account>
+  </GetCallerIdentityResult>
+  <ResponseMetadata>
+    <RequestId>3cd8788b-d257-43ce-9984-e2ab47a6eed5</RequestId>
+  </ResponseMetadata>
+</GetCallerIdentityResponse>: timestamp=2021-08-20T12:18:35.718+0200
+2021-08-20T12:18:35.721+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:35 [DEBUG] [aws-sdk-go] DEBUG: Request ec2/DescribeAccountAttributes Details:
+---[ REQUEST POST-SIGN ]-----------------------------
+POST / HTTP/1.1
+Host: ec2.ap-northeast-3.amazonaws.com
+User-Agent: APN/1.0 HashiCorp/1.0 Terraform/0.12.24 (+https://www.terraform.io) terraform-provider-aws/dev (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go/1.38.19 (go1.16; darwin; amd64)
+Content-Length: 87
+Authorization: AWS4-HMAC-SHA256 Credential=ASIAU4LYCKVBYQHJCREI/20210820/ap-northeast-3/ec2/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date;x-amz-security-token, Signature=47e04eb8980a5bd9082d28f0d67dcc5ef3c6b6aa101a15b1df117e203e9fad3d
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+X-Amz-Date: 20210820T101835Z
+X-Amz-Security-Token: FwoGZXIvYXdzEKT//////////wEaDLUq4Co5txSDNc+BlSK0ARUj7VyO2dzPjvIvd2nII2023Ha+gOQLBHar3ogSSiH084ynAT7Zgxi7zzi0gyMDBnee0kQE5IlAwaYYb16xzJNUYDIe5h2F612uuFNu8RjCoiN0mnWjphOZcAEieE0hNwZaByERs7aFAOFk6WSkv1AknD+qrhMr8nH0jduMSbdOmF+U+Y3UMlznXDeZYjPQvkWr8ptqrlr3rcHRc12kxG5dVE+hc/ECEBSyEdylY87qVIH+6ij2/P2IBjIt3qeyct4JazANHcaG/EeuyJvkSQsA/171youIplXe8rzngubvzycQ0PqH4vZr
+Accept-Encoding: gzip
+
+Action=DescribeAccountAttributes&AttributeName.1=supported-platforms&Version=2016-11-15
+-----------------------------------------------------: timestamp=2021-08-20T12:18:35.721+0200
+2021-08-20T12:18:36.837+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:36 [DEBUG] [aws-sdk-go] DEBUG: Response ec2/DescribeAccountAttributes Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 540
+Cache-Control: no-cache, no-store
+Content-Type: text/xml;charset=UTF-8
+Date: Fri, 20 Aug 2021 10:18:35 GMT
+Server: AmazonEC2
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Amzn-Requestid: a593f517-20d5-47e3-8269-9e97db4e0656
+
+
+-----------------------------------------------------: timestamp=2021-08-20T12:18:36.837+0200
+2021-08-20T12:18:36.837+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:36 [DEBUG] [aws-sdk-go] <?xml version="1.0" encoding="UTF-8"?>
+<DescribeAccountAttributesResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+    <requestId>a593f517-20d5-47e3-8269-9e97db4e0656</requestId>
+    <accountAttributeSet>
+        <item>
+            <attributeName>supported-platforms</attributeName>
+            <attributeValueSet>
+                <item>
+                    <attributeValue>VPC</attributeValue>
+                </item>
+            </attributeValueSet>
+        </item>
+    </accountAttributeSet>
+</DescribeAccountAttributesResponse>: timestamp=2021-08-20T12:18:36.837+0200
+2021/08/20 12:18:36 [DEBUG] Resource instance state not found for node "aws_lambda_function.hello_world", instance aws_lambda_function.hello_world
+2021/08/20 12:18:36 [DEBUG] ReferenceTransformer: "aws_lambda_function.hello_world" references: []
+2021/08/20 12:18:36 [WARN] Provider "registry.terraform.io/-/aws" produced an invalid plan for aws_lambda_function.hello_world, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .package_type: planned value cty.StringVal("Zip") does not match config value cty.NullVal(cty.String)
+      - .reserved_concurrent_executions: planned value cty.NumberIntVal(-1) does not match config value cty.NullVal(cty.Number)
+      - .tracing_config: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+2021-08-20T12:18:36.852+0200 [DEBUG] plugin: plugin process exited: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-aws_v3.37.0_x5 pid=65608
+2021-08-20T12:18:36.852+0200 [DEBUG] plugin: plugin exited
+
+2021/08/20 12:18:36 [INFO] backend/local: plan calling Plan
+2021/08/20 12:18:36 [INFO] terraform: building graph: GraphTypePlan
+------------------------------------------------------------------------
+2021/08/20 12:18:36 [DEBUG] adding implicit provider configuration provider.archive, implied first by data.archive_file.lambda_code_zip
+2021/08/20 12:18:36 [DEBUG] adding implicit provider configuration provider.aws, implied first by aws_iam_role.iam_for_lambda
+2021/08/20 12:18:36 [DEBUG] ProviderTransformer: "aws_lambda_function.hello_world" (*terraform.NodePlannableResource) needs provider.aws.ap-northeast-3
+2021/08/20 12:18:36 [DEBUG] ProviderTransformer: "data.archive_file.lambda_code_zip" (*terraform.NodePlannableResource) needs provider.archive
+2021/08/20 12:18:36 [DEBUG] ProviderTransformer: "aws_iam_role.iam_for_lambda" (*terraform.NodePlannableResource) needs provider.aws
+2021/08/20 12:18:36 [DEBUG] ReferenceTransformer: "aws_iam_role.iam_for_lambda" references: []
+2021/08/20 12:18:36 [DEBUG] ReferenceTransformer: "aws_lambda_function.hello_world" references: [data.archive_file.lambda_code_zip data.archive_file.lambda_code_zip aws_iam_role.iam_for_lambda data.archive_file.lambda_code_zip]
+2021/08/20 12:18:36 [DEBUG] ReferenceTransformer: "data.archive_file.lambda_code_zip" references: []
+2021/08/20 12:18:36 [DEBUG] ReferenceTransformer: "provider.aws.ap-northeast-3" references: []
+2021/08/20 12:18:36 [DEBUG] ReferenceTransformer: "provider.archive" references: []
+2021/08/20 12:18:36 [DEBUG] ReferenceTransformer: "provider.aws" references: []
+2021/08/20 12:18:36 [DEBUG] Starting graph walk: walkPlan
+2021-08-20T12:18:36.854+0200 [INFO]  plugin: configuring client automatic mTLS
+2021-08-20T12:18:36.881+0200 [DEBUG] plugin: starting plugin: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-aws_v3.37.0_x5 args=[/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-aws_v3.37.0_x5]
+2021-08-20T12:18:36.897+0200 [DEBUG] plugin: plugin started: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-aws_v3.37.0_x5 pid=65611
+2021-08-20T12:18:36.897+0200 [DEBUG] plugin: waiting for RPC address: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-aws_v3.37.0_x5
+2021-08-20T12:18:36.968+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: configuring server automatic mTLS: timestamp=2021-08-20T12:18:36.968+0200
+2021-08-20T12:18:37.004+0200 [DEBUG] plugin: using plugin: version=5
+2021-08-20T12:18:37.004+0200 [DEBUG] plugin.terraform-provider-aws_v3.37.0_x5: plugin address: network=unix address=/var/folders/73/1k_q7ngn2_9gydd_rg3x1bsrwc69_w/T/plugin373873006 timestamp=2021-08-20T12:18:37.004+0200
+2021-08-20T12:18:37.005+0200 [INFO]  plugin: configuring client automatic mTLS
+2021-08-20T12:18:37.035+0200 [DEBUG] plugin: starting plugin: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-archive_v2.1.0_x5 args=[/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-archive_v2.1.0_x5]
+2021-08-20T12:18:37.040+0200 [DEBUG] plugin: plugin started: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-archive_v2.1.0_x5 pid=65612
+2021-08-20T12:18:37.040+0200 [DEBUG] plugin: waiting for RPC address: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-archive_v2.1.0_x5
+2021-08-20T12:18:37.055+0200 [INFO]  plugin.terraform-provider-archive_v2.1.0_x5: configuring server automatic mTLS: timestamp=2021-08-20T12:18:37.054+0200
+2021-08-20T12:18:37.093+0200 [DEBUG] plugin: using plugin: version=5
+2021-08-20T12:18:37.093+0200 [DEBUG] plugin.terraform-provider-archive_v2.1.0_x5: plugin address: address=/var/folders/73/1k_q7ngn2_9gydd_rg3x1bsrwc69_w/T/plugin897787411 network=unix timestamp=2021-08-20T12:18:37.093+0200
+2021-08-20T12:18:37.094+0200 [INFO]  plugin: configuring client automatic mTLS
+2021-08-20T12:18:37.121+0200 [DEBUG] plugin: starting plugin: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-aws_v3.37.0_x5 args=[/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-aws_v3.37.0_x5]
+2021-08-20T12:18:37.126+0200 [DEBUG] plugin: plugin started: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-aws_v3.37.0_x5 pid=65613
+2021-08-20T12:18:37.126+0200 [DEBUG] plugin: waiting for RPC address: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-aws_v3.37.0_x5
+2021-08-20T12:18:37.182+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: configuring server automatic mTLS: timestamp=2021-08-20T12:18:37.182+0200
+2021-08-20T12:18:37.217+0200 [DEBUG] plugin: using plugin: version=5
+2021-08-20T12:18:37.217+0200 [DEBUG] plugin.terraform-provider-aws_v3.37.0_x5: plugin address: network=unix address=/var/folders/73/1k_q7ngn2_9gydd_rg3x1bsrwc69_w/T/plugin123414720 timestamp=2021-08-20T12:18:37.217+0200
+2021/08/20 12:18:37 [DEBUG] ReferenceTransformer: "data.archive_file.lambda_code_zip" references: []
+2021-08-20T12:18:37.222+0200 [DEBUG] plugin: plugin process exited: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-archive_v2.1.0_x5 pid=65612
+2021-08-20T12:18:37.223+0200 [DEBUG] plugin: plugin exited
+2021-08-20T12:18:37.302+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:37 [INFO] AWS Auth provider used: "EnvProvider": timestamp=2021-08-20T12:18:37.301+0200
+2021-08-20T12:18:37.302+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:37 [DEBUG] Trying to get account information via sts:GetCallerIdentity: timestamp=2021-08-20T12:18:37.302+0200
+2021-08-20T12:18:37.303+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:37 [DEBUG] [aws-sdk-go] DEBUG: Request sts/GetCallerIdentity Details:
+---[ REQUEST POST-SIGN ]-----------------------------
+POST / HTTP/1.1
+Host: sts.amazonaws.com
+User-Agent: APN/1.0 HashiCorp/1.0 Terraform/0.12.24 (+https://www.terraform.io) terraform-provider-aws/dev (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go/1.38.19 (go1.16; darwin; amd64)
+Content-Length: 43
+Authorization: AWS4-HMAC-SHA256 Credential=ASIAU4LYCKVBYQHJCREI/20210820/us-east-1/sts/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date;x-amz-security-token, Signature=38fbb8861c73989de043c00944395998907caaa3dd28f9cd027dcabcc2d50a85
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+X-Amz-Date: 20210820T101837Z
+X-Amz-Security-Token: FwoGZXIvYXdzEKT//////////wEaDLUq4Co5txSDNc+BlSK0ARUj7VyO2dzPjvIvd2nII2023Ha+gOQLBHar3ogSSiH084ynAT7Zgxi7zzi0gyMDBnee0kQE5IlAwaYYb16xzJNUYDIe5h2F612uuFNu8RjCoiN0mnWjphOZcAEieE0hNwZaByERs7aFAOFk6WSkv1AknD+qrhMr8nH0jduMSbdOmF+U+Y3UMlznXDeZYjPQvkWr8ptqrlr3rcHRc12kxG5dVE+hc/ECEBSyEdylY87qVIH+6ij2/P2IBjIt3qeyct4JazANHcaG/EeuyJvkSQsA/171youIplXe8rzngubvzycQ0PqH4vZr
+Accept-Encoding: gzip
+
+Action=GetCallerIdentity&Version=2011-06-15
+-----------------------------------------------------: timestamp=2021-08-20T12:18:37.303+0200
+2021-08-20T12:18:37.347+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:37 [INFO] AWS Auth provider used: "EnvProvider": timestamp=2021-08-20T12:18:37.347+0200
+2021-08-20T12:18:37.347+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:37 [DEBUG] Trying to get account information via sts:GetCallerIdentity: timestamp=2021-08-20T12:18:37.347+0200
+2021-08-20T12:18:37.348+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:37 [DEBUG] [aws-sdk-go] DEBUG: Request sts/GetCallerIdentity Details:
+---[ REQUEST POST-SIGN ]-----------------------------
+POST / HTTP/1.1
+Host: sts.ap-northeast-3.amazonaws.com
+User-Agent: APN/1.0 HashiCorp/1.0 Terraform/0.12.24 (+https://www.terraform.io) terraform-provider-aws/dev (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go/1.38.19 (go1.16; darwin; amd64)
+Content-Length: 43
+Authorization: AWS4-HMAC-SHA256 Credential=ASIAU4LYCKVBYQHJCREI/20210820/ap-northeast-3/sts/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date;x-amz-security-token, Signature=12cf8c3217ce0dbade4e2065c7ec02fb059ac92a626621d22812b8789dc641dc
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+X-Amz-Date: 20210820T101837Z
+X-Amz-Security-Token: FwoGZXIvYXdzEKT//////////wEaDLUq4Co5txSDNc+BlSK0ARUj7VyO2dzPjvIvd2nII2023Ha+gOQLBHar3ogSSiH084ynAT7Zgxi7zzi0gyMDBnee0kQE5IlAwaYYb16xzJNUYDIe5h2F612uuFNu8RjCoiN0mnWjphOZcAEieE0hNwZaByERs7aFAOFk6WSkv1AknD+qrhMr8nH0jduMSbdOmF+U+Y3UMlznXDeZYjPQvkWr8ptqrlr3rcHRc12kxG5dVE+hc/ECEBSyEdylY87qVIH+6ij2/P2IBjIt3qeyct4JazANHcaG/EeuyJvkSQsA/171youIplXe8rzngubvzycQ0PqH4vZr
+Accept-Encoding: gzip
+
+Action=GetCallerIdentity&Version=2011-06-15
+-----------------------------------------------------: timestamp=2021-08-20T12:18:37.348+0200
+2021-08-20T12:18:38.001+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:38 [DEBUG] [aws-sdk-go] DEBUG: Response sts/GetCallerIdentity Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 463
+Content-Type: text/xml
+Date: Fri, 20 Aug 2021 10:18:37 GMT
+X-Amzn-Requestid: 90599067-d166-4416-ab65-35e067bfba06
+
+
+-----------------------------------------------------: timestamp=2021-08-20T12:18:38.001+0200
+2021-08-20T12:18:38.001+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:38 [DEBUG] [aws-sdk-go] <GetCallerIdentityResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+  <GetCallerIdentityResult>
+    <Arn>arn:aws:sts::335796131139:assumed-role/AdministratorAccess-Role/alejandro.rusell</Arn>
+    <UserId>AROAU4LYCKVBSZEHQ4Y64:alejandro.rusell</UserId>
+    <Account>335796131139</Account>
+  </GetCallerIdentityResult>
+  <ResponseMetadata>
+    <RequestId>90599067-d166-4416-ab65-35e067bfba06</RequestId>
+  </ResponseMetadata>
+</GetCallerIdentityResponse>: timestamp=2021-08-20T12:18:38.001+0200
+2021-08-20T12:18:38.001+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:38 [DEBUG] Trying to get account information via sts:GetCallerIdentity: timestamp=2021-08-20T12:18:38.001+0200
+2021-08-20T12:18:38.001+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:38 [DEBUG] [aws-sdk-go] DEBUG: Request sts/GetCallerIdentity Details:
+---[ REQUEST POST-SIGN ]-----------------------------
+POST / HTTP/1.1
+Host: sts.amazonaws.com
+User-Agent: APN/1.0 HashiCorp/1.0 Terraform/0.12.24 (+https://www.terraform.io) terraform-provider-aws/dev (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go/1.38.19 (go1.16; darwin; amd64)
+Content-Length: 43
+Authorization: AWS4-HMAC-SHA256 Credential=ASIAU4LYCKVBYQHJCREI/20210820/us-east-1/sts/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date;x-amz-security-token, Signature=b71a7ba3afd1672d471abfacc8a2eb751b9bda6e91ee8b754134ba6e99125d57
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+X-Amz-Date: 20210820T101838Z
+X-Amz-Security-Token: FwoGZXIvYXdzEKT//////////wEaDLUq4Co5txSDNc+BlSK0ARUj7VyO2dzPjvIvd2nII2023Ha+gOQLBHar3ogSSiH084ynAT7Zgxi7zzi0gyMDBnee0kQE5IlAwaYYb16xzJNUYDIe5h2F612uuFNu8RjCoiN0mnWjphOZcAEieE0hNwZaByERs7aFAOFk6WSkv1AknD+qrhMr8nH0jduMSbdOmF+U+Y3UMlznXDeZYjPQvkWr8ptqrlr3rcHRc12kxG5dVE+hc/ECEBSyEdylY87qVIH+6ij2/P2IBjIt3qeyct4JazANHcaG/EeuyJvkSQsA/171youIplXe8rzngubvzycQ0PqH4vZr
+Accept-Encoding: gzip
+
+Action=GetCallerIdentity&Version=2011-06-15
+-----------------------------------------------------: timestamp=2021-08-20T12:18:38.001+0200
+2021-08-20T12:18:38.537+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:38 [DEBUG] [aws-sdk-go] DEBUG: Response sts/GetCallerIdentity Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 463
+Content-Type: text/xml
+Date: Fri, 20 Aug 2021 10:18:37 GMT
+X-Amzn-Requestid: 89dbf281-e118-47a2-9bd5-b619f90707a0
+
+
+-----------------------------------------------------: timestamp=2021-08-20T12:18:38.537+0200
+2021-08-20T12:18:38.537+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:38 [DEBUG] [aws-sdk-go] <GetCallerIdentityResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+  <GetCallerIdentityResult>
+    <Arn>arn:aws:sts::335796131139:assumed-role/AdministratorAccess-Role/alejandro.rusell</Arn>
+    <UserId>AROAU4LYCKVBSZEHQ4Y64:alejandro.rusell</UserId>
+    <Account>335796131139</Account>
+  </GetCallerIdentityResult>
+  <ResponseMetadata>
+    <RequestId>89dbf281-e118-47a2-9bd5-b619f90707a0</RequestId>
+  </ResponseMetadata>
+</GetCallerIdentityResponse>: timestamp=2021-08-20T12:18:38.537+0200
+2021-08-20T12:18:38.537+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:38 [DEBUG] Trying to get account information via sts:GetCallerIdentity: timestamp=2021-08-20T12:18:38.537+0200
+2021-08-20T12:18:38.537+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:38 [DEBUG] [aws-sdk-go] DEBUG: Request sts/GetCallerIdentity Details:
+---[ REQUEST POST-SIGN ]-----------------------------
+POST / HTTP/1.1
+Host: sts.ap-northeast-3.amazonaws.com
+User-Agent: APN/1.0 HashiCorp/1.0 Terraform/0.12.24 (+https://www.terraform.io) terraform-provider-aws/dev (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go/1.38.19 (go1.16; darwin; amd64)
+Content-Length: 43
+Authorization: AWS4-HMAC-SHA256 Credential=ASIAU4LYCKVBYQHJCREI/20210820/ap-northeast-3/sts/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date;x-amz-security-token, Signature=09867a7ecb57a13795a7ecea7f3879d46507ebbc7077cd62f359128ad01867d5
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+X-Amz-Date: 20210820T101838Z
+X-Amz-Security-Token: FwoGZXIvYXdzEKT//////////wEaDLUq4Co5txSDNc+BlSK0ARUj7VyO2dzPjvIvd2nII2023Ha+gOQLBHar3ogSSiH084ynAT7Zgxi7zzi0gyMDBnee0kQE5IlAwaYYb16xzJNUYDIe5h2F612uuFNu8RjCoiN0mnWjphOZcAEieE0hNwZaByERs7aFAOFk6WSkv1AknD+qrhMr8nH0jduMSbdOmF+U+Y3UMlznXDeZYjPQvkWr8ptqrlr3rcHRc12kxG5dVE+hc/ECEBSyEdylY87qVIH+6ij2/P2IBjIt3qeyct4JazANHcaG/EeuyJvkSQsA/171youIplXe8rzngubvzycQ0PqH4vZr
+Accept-Encoding: gzip
+
+Action=GetCallerIdentity&Version=2011-06-15
+-----------------------------------------------------: timestamp=2021-08-20T12:18:38.537+0200
+2021-08-20T12:18:38.565+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:38 [DEBUG] [aws-sdk-go] DEBUG: Response sts/GetCallerIdentity Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 463
+Content-Type: text/xml
+Date: Fri, 20 Aug 2021 10:18:37 GMT
+X-Amzn-Requestid: 49c84162-4909-4e42-aff2-022aaeb7b270
+
+
+-----------------------------------------------------: timestamp=2021-08-20T12:18:38.565+0200
+2021-08-20T12:18:38.565+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:38 [DEBUG] [aws-sdk-go] <GetCallerIdentityResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+  <GetCallerIdentityResult>
+    <Arn>arn:aws:sts::335796131139:assumed-role/AdministratorAccess-Role/alejandro.rusell</Arn>
+    <UserId>AROAU4LYCKVBSZEHQ4Y64:alejandro.rusell</UserId>
+    <Account>335796131139</Account>
+  </GetCallerIdentityResult>
+  <ResponseMetadata>
+    <RequestId>49c84162-4909-4e42-aff2-022aaeb7b270</RequestId>
+  </ResponseMetadata>
+</GetCallerIdentityResponse>: timestamp=2021-08-20T12:18:38.565+0200
+2021-08-20T12:18:38.568+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:38 [DEBUG] [aws-sdk-go] DEBUG: Request ec2/DescribeAccountAttributes Details:
+---[ REQUEST POST-SIGN ]-----------------------------
+POST / HTTP/1.1
+Host: ec2.eu-west-1.amazonaws.com
+User-Agent: APN/1.0 HashiCorp/1.0 Terraform/0.12.24 (+https://www.terraform.io) terraform-provider-aws/dev (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go/1.38.19 (go1.16; darwin; amd64)
+Content-Length: 87
+Authorization: AWS4-HMAC-SHA256 Credential=ASIAU4LYCKVBYQHJCREI/20210820/eu-west-1/ec2/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date;x-amz-security-token, Signature=78448837dfccadf5d507d65a60f3dc762eae3af282311829e38646323e768145
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+X-Amz-Date: 20210820T101838Z
+X-Amz-Security-Token: FwoGZXIvYXdzEKT//////////wEaDLUq4Co5txSDNc+BlSK0ARUj7VyO2dzPjvIvd2nII2023Ha+gOQLBHar3ogSSiH084ynAT7Zgxi7zzi0gyMDBnee0kQE5IlAwaYYb16xzJNUYDIe5h2F612uuFNu8RjCoiN0mnWjphOZcAEieE0hNwZaByERs7aFAOFk6WSkv1AknD+qrhMr8nH0jduMSbdOmF+U+Y3UMlznXDeZYjPQvkWr8ptqrlr3rcHRc12kxG5dVE+hc/ECEBSyEdylY87qVIH+6ij2/P2IBjIt3qeyct4JazANHcaG/EeuyJvkSQsA/171youIplXe8rzngubvzycQ0PqH4vZr
+Accept-Encoding: gzip
+
+Action=DescribeAccountAttributes&AttributeName.1=supported-platforms&Version=2016-11-15
+-----------------------------------------------------: timestamp=2021-08-20T12:18:38.568+0200
+2021-08-20T12:18:39.069+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:39 [DEBUG] [aws-sdk-go] DEBUG: Response ec2/DescribeAccountAttributes Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 540
+Cache-Control: no-cache, no-store
+Content-Type: text/xml;charset=UTF-8
+Date: Fri, 20 Aug 2021 10:18:38 GMT
+Server: AmazonEC2
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Amzn-Requestid: 70709521-9909-443c-9520-ba377187aee0
+
+
+-----------------------------------------------------: timestamp=2021-08-20T12:18:39.068+0200
+2021-08-20T12:18:39.069+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:39 [DEBUG] [aws-sdk-go] <?xml version="1.0" encoding="UTF-8"?>
+<DescribeAccountAttributesResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+    <requestId>70709521-9909-443c-9520-ba377187aee0</requestId>
+    <accountAttributeSet>
+        <item>
+            <attributeName>supported-platforms</attributeName>
+            <attributeValueSet>
+                <item>
+                    <attributeValue>VPC</attributeValue>
+                </item>
+            </attributeValueSet>
+        </item>
+    </accountAttributeSet>
+</DescribeAccountAttributesResponse>: timestamp=2021-08-20T12:18:39.068+0200
+2021/08/20 12:18:39 [DEBUG] Resource instance state not found for node "aws_iam_role.iam_for_lambda", instance aws_iam_role.iam_for_lambda
+2021/08/20 12:18:39 [DEBUG] ReferenceTransformer: "aws_iam_role.iam_for_lambda" references: []
+2021/08/20 12:18:39 [WARN] Provider "registry.terraform.io/-/aws" produced an invalid plan for aws_iam_role.iam_for_lambda, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .force_detach_policies: planned value cty.False does not match config value cty.NullVal(cty.Bool)
+      - .path: planned value cty.StringVal("/") does not match config value cty.NullVal(cty.String)
+      - .max_session_duration: planned value cty.NumberIntVal(3600) does not match config value cty.NullVal(cty.Number)
+      - .inline_policy: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+2021-08-20T12:18:39.080+0200 [DEBUG] plugin: plugin process exited: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-aws_v3.37.0_x5 pid=65611
+2021-08-20T12:18:39.080+0200 [DEBUG] plugin: plugin exited
+2021-08-20T12:18:39.686+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:39 [DEBUG] [aws-sdk-go] DEBUG: Response sts/GetCallerIdentity Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 463
+Content-Type: text/xml
+Date: Fri, 20 Aug 2021 10:18:39 GMT
+X-Amzn-Requestid: 776eb030-d18d-408b-bfdc-beb37692b806
+
+
+-----------------------------------------------------: timestamp=2021-08-20T12:18:39.686+0200
+2021-08-20T12:18:39.686+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:39 [DEBUG] [aws-sdk-go] <GetCallerIdentityResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+  <GetCallerIdentityResult>
+    <Arn>arn:aws:sts::335796131139:assumed-role/AdministratorAccess-Role/alejandro.rusell</Arn>
+    <UserId>AROAU4LYCKVBSZEHQ4Y64:alejandro.rusell</UserId>
+    <Account>335796131139</Account>
+  </GetCallerIdentityResult>
+  <ResponseMetadata>
+    <RequestId>776eb030-d18d-408b-bfdc-beb37692b806</RequestId>
+  </ResponseMetadata>
+</GetCallerIdentityResponse>: timestamp=2021-08-20T12:18:39.686+0200
+2021-08-20T12:18:39.689+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:39 [DEBUG] [aws-sdk-go] DEBUG: Request ec2/DescribeAccountAttributes Details:
+---[ REQUEST POST-SIGN ]-----------------------------
+POST / HTTP/1.1
+Host: ec2.ap-northeast-3.amazonaws.com
+User-Agent: APN/1.0 HashiCorp/1.0 Terraform/0.12.24 (+https://www.terraform.io) terraform-provider-aws/dev (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go/1.38.19 (go1.16; darwin; amd64)
+Content-Length: 87
+Authorization: AWS4-HMAC-SHA256 Credential=ASIAU4LYCKVBYQHJCREI/20210820/ap-northeast-3/ec2/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date;x-amz-security-token, Signature=187e82da1be114b8952951ca632869d750e41afe17f805b332ba8ec3220efe03
+Content-Type: application/x-www-form-urlencoded; charset=utf-8
+X-Amz-Date: 20210820T101839Z
+X-Amz-Security-Token: FwoGZXIvYXdzEKT//////////wEaDLUq4Co5txSDNc+BlSK0ARUj7VyO2dzPjvIvd2nII2023Ha+gOQLBHar3ogSSiH084ynAT7Zgxi7zzi0gyMDBnee0kQE5IlAwaYYb16xzJNUYDIe5h2F612uuFNu8RjCoiN0mnWjphOZcAEieE0hNwZaByERs7aFAOFk6WSkv1AknD+qrhMr8nH0jduMSbdOmF+U+Y3UMlznXDeZYjPQvkWr8ptqrlr3rcHRc12kxG5dVE+hc/ECEBSyEdylY87qVIH+6ij2/P2IBjIt3qeyct4JazANHcaG/EeuyJvkSQsA/171youIplXe8rzngubvzycQ0PqH4vZr
+Accept-Encoding: gzip
+
+Action=DescribeAccountAttributes&AttributeName.1=supported-platforms&Version=2016-11-15
+-----------------------------------------------------: timestamp=2021-08-20T12:18:39.689+0200
+2021-08-20T12:18:40.947+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:40 [DEBUG] [aws-sdk-go] DEBUG: Response ec2/DescribeAccountAttributes Details:
+---[ RESPONSE ]--------------------------------------
+HTTP/1.1 200 OK
+Connection: close
+Content-Length: 540
+Cache-Control: no-cache, no-store
+Content-Type: text/xml;charset=UTF-8
+Date: Fri, 20 Aug 2021 10:18:40 GMT
+Server: AmazonEC2
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Amzn-Requestid: 2292325b-d9c2-41f9-bffd-ed454456dd76
+
+
+-----------------------------------------------------: timestamp=2021-08-20T12:18:40.947+0200
+2021-08-20T12:18:40.948+0200 [INFO]  plugin.terraform-provider-aws_v3.37.0_x5: 2021/08/20 12:18:40 [DEBUG] [aws-sdk-go] <?xml version="1.0" encoding="UTF-8"?>
+<DescribeAccountAttributesResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+    <requestId>2292325b-d9c2-41f9-bffd-ed454456dd76</requestId>
+    <accountAttributeSet>
+        <item>
+            <attributeName>supported-platforms</attributeName>
+            <attributeValueSet>
+                <item>
+                    <attributeValue>VPC</attributeValue>
+                </item>
+            </attributeValueSet>
+        </item>
+    </accountAttributeSet>
+</DescribeAccountAttributesResponse>: timestamp=2021-08-20T12:18:40.947+0200
+2021/08/20 12:18:40 [DEBUG] Resource instance state not found for node "aws_lambda_function.hello_world", instance aws_lambda_function.hello_world
+2021/08/20 12:18:40 [DEBUG] ReferenceTransformer: "aws_lambda_function.hello_world" references: []
+2021/08/20 12:18:40 [WARN] Provider "registry.terraform.io/-/aws" produced an invalid plan for aws_lambda_function.hello_world, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .package_type: planned value cty.StringVal("Zip") does not match config value cty.NullVal(cty.String)
+      - .reserved_concurrent_executions: planned value cty.NumberIntVal(-1) does not match config value cty.NullVal(cty.Number)
+      - .tracing_config: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+2021-08-20T12:18:40.960+0200 [DEBUG] plugin: plugin process exited: path=/Users/alejandro.rusell/devel/terraform_aws_bug_poc/.terraform/plugins/darwin_amd64/terraform-provider-aws_v3.37.0_x5 pid=65613
+2021-08-20T12:18:40.960+0200 [DEBUG] plugin: plugin exited
+2021/08/20 12:18:40 [INFO] backend/local: plan operation completed
+
+An execution plan has been generated and is shown below.
+Resource actions are indicated with the following symbols:
+  [32m+[0m create
+[0m
+Terraform will perform the following actions:
+
+[1m  # aws_iam_role.iam_for_lambda[0m will be created[0m[0m
+[0m  [32m+[0m[0m resource "aws_iam_role" "iam_for_lambda" {
+      [32m+[0m [0m[1m[0marn[0m[0m                   = (known after apply)
+      [32m+[0m [0m[1m[0massume_role_policy[0m[0m    = jsonencode(
+            {
+              [32m+[0m [0mStatement = [
+                  [32m+[0m [0m{
+                      [32m+[0m [0mAction    = "sts:AssumeRole"
+                      [32m+[0m [0mEffect    = "Allow"
+                      [32m+[0m [0mPrincipal = {
+                          [32m+[0m [0mService = "lambda.amazonaws.com"
+                        }
+                      [32m+[0m [0mSid       = ""
+                    },
+                ]
+              [32m+[0m [0mVersion   = "2012-10-17"
+            }
+        )
+      [32m+[0m [0m[1m[0mcreate_date[0m[0m           = (known after apply)
+      [32m+[0m [0m[1m[0mforce_detach_policies[0m[0m = false
+      [32m+[0m [0m[1m[0mid[0m[0m                    = (known after apply)
+      [32m+[0m [0m[1m[0mmanaged_policy_arns[0m[0m   = (known after apply)
+      [32m+[0m [0m[1m[0mmax_session_duration[0m[0m  = 3600
+      [32m+[0m [0m[1m[0mname[0m[0m                  = "iam_for_lambda"
+      [32m+[0m [0m[1m[0mpath[0m[0m                  = "/"
+      [32m+[0m [0m[1m[0munique_id[0m[0m             = (known after apply)
+
+      [32m+[0m [0minline_policy {
+          [32m+[0m [0m[1m[0mname[0m[0m   = (known after apply)
+          [32m+[0m [0m[1m[0mpolicy[0m[0m = (known after apply)
+        }
+    }
+
+[1m  # aws_lambda_function.hello_world[0m will be created[0m[0m
+[0m  [32m+[0m[0m resource "aws_lambda_function" "hello_world" {
+      [32m+[0m [0m[1m[0marn[0m[0m                            = (known after apply)
+      [32m+[0m [0m[1m[0mdescription[0m[0m                    = "Hello World"
+      [32m+[0m [0m[1m[0mfilename[0m[0m                       = "zip/hw.zip"
+      [32m+[0m [0m[1m[0mfunction_name[0m[0m                  = "hello_world"
+      [32m+[0m [0m[1m[0mhandler[0m[0m                        = "hello_world.handler"
+      [32m+[0m [0m[1m[0mid[0m[0m                             = (known after apply)
+      [32m+[0m [0m[1m[0minvoke_arn[0m[0m                     = (known after apply)
+      [32m+[0m [0m[1m[0mlast_modified[0m[0m                  = (known after apply)
+      [32m+[0m [0m[1m[0mmemory_size[0m[0m                    = 128
+      [32m+[0m [0m[1m[0mpackage_type[0m[0m                   = "Zip"
+      [32m+[0m [0m[1m[0mpublish[0m[0m                        = true
+      [32m+[0m [0m[1m[0mqualified_arn[0m[0m                  = (known after apply)
+      [32m+[0m [0m[1m[0mreserved_concurrent_executions[0m[0m = -1
+      [32m+[0m [0m[1m[0mrole[0m[0m                           = (known after apply)
+      [32m+[0m [0m[1m[0mruntime[0m[0m                        = "python3.7"
+      [32m+[0m [0m[1m[0msigning_job_arn[0m[0m                = (known after apply)
+      [32m+[0m [0m[1m[0msigning_profile_version_arn[0m[0m    = (known after apply)
+      [32m+[0m [0m[1m[0msource_code_hash[0m[0m               = "/wAHl12Fsz30dVT4mKaP+JoG75DeydohzatEF2SPuF4="
+      [32m+[0m [0m[1m[0msource_code_size[0m[0m               = (known after apply)
+      [32m+[0m [0m[1m[0mtimeout[0m[0m                        = 30
+      [32m+[0m [0m[1m[0mversion[0m[0m                        = (known after apply)
+
+      [32m+[0m [0mtracing_config {
+          [32m+[0m [0m[1m[0mmode[0m[0m = (known after apply)
+        }
+    }
+
+[0m[1mPlan:[0m 2 to add, 0 to change, 0 to destroy.[0m
+[33m
+[1m[33mWarning: [0m[0m[1mQuoted references are deprecated[0m
+
+[0m  on lambda.tf line 28, in resource "aws_lambda_function" "hello_world":
+  28:   provider         = [4m"aws.ap-northeast-3"[0m
+[0m
+In this context, references are expected literally rather than in quotes.
+Terraform 0.11 and earlier required quotes, but quoted references are now
+deprecated and will be removed in a future version of Terraform. Remove the
+quotes surrounding this reference to silence this warning.
+
+(and one more similar warning elsewhere)
+[0m[0m
+[33m
+[1m[33mWarning: [0m[0m[1mInterpolation-only expressions are deprecated[0m
+
+[0m  on lambda.tf line 31, in resource "aws_lambda_function" "hello_world":
+  31:   filename         = [4m"${data.archive_file.lambda_code_zip.output_path}"[0m
+[0m
+Terraform 0.11 and earlier required all non-constant expressions to be
+provided via interpolation syntax, but this pattern is now deprecated. To
+silence this warning, remove the "${ sequence from the start and the }"
+sequence from the end of this expression, leaving just the inner expression.
+
+Template interpolation syntax is still used to construct strings from
+expressions when the template includes multiple interpolation sequences or a
+mixture of literal strings and interpolations. This deprecation applies only
+to templates that consist entirely of a single interpolation sequence.
+
+(and one more similar warning elsewhere)
+[0m[0m
+
+------------------------------------------------------------------------
+
+Note: You didn't specify an "-out" parameter to save this plan, so Terraform
+can't guarantee that exactly these actions will be performed if
+"terraform apply" is subsequently run.
+
